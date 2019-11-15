@@ -1,0 +1,112 @@
+---
+output: 
+  pdf_document:
+    keep_tex: true
+    fig_caption: yes
+    latex_engine: pdflatex
+    template: ./svm-latex-syllabus.tex
+geometry: margin=1in
+
+title: "SOC 800: Geographic Redistiribution of Latin Americans in the United States"
+author: Neal Marquez
+date: "Fall 2019"
+
+email: "nmarquez@u.washington.edu"
+fontfamily: mathpazo
+fontsize: 11pt
+header-includes:
+   - \linespread{1.05}
+---
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(cache=FALSE, dev='pdf')
+mon <- as.Date("2018-08-27")
+# fri <- as.Date("2016-01-08")
+advdate <- function(obj, adv) {
+ tmon <- obj + 7*(adv-1)
+ tfri <- obj + 4 + 7*(adv-1)
+ tmon <- format(tmon, format="%m/%d")
+ tfri <- format(tfri, format="%m/%d")
+ zadv <- sprintf("%02d", adv)
+ tmp <- paste("Week ",zadv,sep='',", ", tmon," - ",tfri)
+ return(tmp)
+}
+library(RefManageR)
+# library(knitcitations)
+# library(rcrossref)
+bib <- ReadBib("~/Documents/bibtec/Hispanic Migration.bib",check=F)
+myopts <- BibOptions(bib.style = "authoryear", style="latex", first.inits=FALSE, max.names = 20)
+```
+
+# Course Description
+
+Historically Latin America, and particularly Mexico, has been a large source of the overall immigration that has occurred in the United States. The relatively young population of Latin American countries and the demand for low wage labor in the United States have acted as push and pull factors for migration respectively. Geographic distribution, however, has widely varied for immigration events. In addition to traditional immigrant hubs Latin American immigrants into the United States have founded large populations On the Southern Border region and Chicago, in the first wave of immigration events, and at the turn of century more towards South and South Eastern States.  
+
+Most recently, migration from Mexico, which has the largest single foreign born population in the United States, has come to a tapering off, while migration from other Latin American countries, such as Central American countries, have begun to pick up. Despite this, populations of foreign born Mexicans continue to migrate within the United States shifting the locations where traditional migrant hubs were found. The continued migration of the Mexican foreig born population has not well been theorized upon and, as this population ages, we would expect the push and pull factors for migration events to evolve from predominantly labor concerns, to potentially housing, affordability, and health concerns.
+
+In addition, how changes in the foreign born Mexican population affect other racial and ethinic groups in recent years is less well studied. While traditionally, native Hispanic populations have grown alongside foreign born populations, more recent research shows these populations moving in different directions. In this Syllabus, we go over several of the historical factors that have led to large stocks of Latin Americans in the United States, how the historical pull factors may be shifting, and how this affects other racial/ethnic group dynamics such as segregation and migration.
+
+
+# Course Objectives
+
+1. Read Through Breif History of Latin American Migration in the United States
+
+2. Evaluate current litearture on studies involving new destinations and new realtionships between ethnic/racial groups.
+
+3. Begin to bring in data sources that fill the gap on the current discussion.
+
+# Reading Schedule
+
+## Week 1: Historical Migration
+```{r, echo = FALSE, results="asis"} 
+bib[c("Durand2010", "Kerwin2010",
+    "Corwin1973", "Corwin")]
+``` 
+
+## Week 2: New Destinations
+```{r, echo = FALSE, results="asis"} 
+bib[c("Singer2004", "Massey2010", "Barcus2007", "Durand1999")]
+``` 
+
+## Week 3: Mexican-American Demography
+```{r, echo = FALSE, results="asis"} 
+bib[c("Krogstad2014",
+      "Johnson2008",
+      "Jimenez2008", "Gonzalez-Barrera2013",
+      "Lichter2012",
+      "Johnson2016"
+      )]
+```
+
+## Week 4: Health and Migration
+```{r, echo = FALSE, results="asis"} 
+bib[c("Beltran-Sanchez2016",
+      "Crimmins2019",
+      "Elo2004",
+      "Hayward2014",
+      "Mehta2016",
+      "Riosmena2013"
+      )]
+```
+
+## Week 5: Intergroup Relations
+```{r, echo = FALSE, results="asis"} 
+bib[c("Crowley2010a",
+      "Lichter2010a",
+      "Hall2017",
+      "Lee2017",
+      "Lichter2012a"
+      )]
+```
+
+## Week 6: Economics, Mobility, and Migration in the United States
+```{r, echo = FALSE, results="asis"} 
+bib[c("Hall2019a", "Golash-Boza2009", "Calnan2017", "Parrado2016")]
+```
+
+## Week 7: Transnational Communities
+```{r, echo = FALSE, results="asis"} 
+bib[c("Durand1986", "Levitt2006", "GUARNIZO1994", "Tarrius2000", "Anguiano-Tellez2007")]
+```
