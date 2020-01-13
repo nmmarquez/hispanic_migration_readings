@@ -100,7 +100,8 @@ bibDem[c(
 ```{r, echo = FALSE, results="asis"} 
 bibDem[c(
   "Preston1975", "Preston1998", "Sampson2008", "Hayward2004", "Rogers2010", 
-  "Read2006", "Singh-Manoux2005", "SZRETER1988", "Link1995"
+  "Read2006", "Singh-Manoux2005", "SZRETER1988", "Link1995", "Chetty2018",
+  "Chetty2016"
 )]
 ```
 
@@ -112,3 +113,16 @@ bibDem[c(
   "Hobcraft1982", "Raftery2014a"
 )]
 ```
+
+# General Migration  
+
+## Theories of Migration  
+```{r, echo = FALSE, results="asis"} 
+c(bibMig[c(
+  "Wimmer", "Hatton2002", "Brettell2007", "Massey1993", "King2012", "Cooke2018",
+  "Calnan2017", "Cadena2013", "Ellis2014", "Wang2016a"
+)], bibDem[c("Morris2017")])
+```
+
+
+
