@@ -1,0 +1,13 @@
+# Fertility and Migration  
+ - Where is the intersection between fertility and migration  
+ - Higher rates of fertility for migrants  
+   - nativist fears  
+   - population stability maintained  
+ - assimilation of fertility, whats it about?  
+ - What is teh comparison group here?  
+ - But seriously what the fuck does assimilation mean here?  
+ - **Does this apply to an internal migration context as well?**  
+ - Check out Trajectories et Origines Survey in France  
+ - **How do we deal with wildly different sample sizes in demographic comparisons?**  
+ - Remember the difference between a child birth and number of children that mortality rates can alter  
+ - Emphasis on selection vs adaptation of migrants on fertility patterns   

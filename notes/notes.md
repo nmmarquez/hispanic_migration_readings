@@ -254,5 +254,33 @@ Hispanic men and women have lower mortality from both heart disease and cancer t
  - Linkage of selected CPS samples to the National Death Index (NDI) and the linkage of selected National Health Interview Surveys to the NDI  
  - 
 
-# Check out undo
+# Context of Reception  
+
+### Cecilia Menjivar and Salvadorians in San Francisco  
+ - The structure and opportunities for immigrants not only affects themselves but also the ability of the network to support other immigrants  
+ - shared experience alone is not enough to bond immigrants especially during economically tough times  
+ - This was taled about a lot in the context of the economy but i think housing and social services can be expanded on here  
+
+### Rumbaut and Reactive Ethnicities  
+ - When ethnic groups are targeted there is a chance for ethnicities to reeinforce themselves  
+ - Examples are given on CA's 2006 HR 4437 and 1994's prop 187 in relation to Hispanic identities  
+ - These sentiments are also echoded in Mexican Immigrant replenishment by Tomas Jimenez  
+ - To what degree are these localy concentrated phenomenea or is this national? Check out AZ- SB780?  
+
+### Latino Immigrant Access to Higher Education in a Bipolar Context of Reception  
+ - How do state policies for in state tuition effect enrollment of Foreign Born Non Citizen (FBNC) Latinos  
+ - Histories of migration in particular states also have an effect on enrollment  
+ - What does the Hispanification of education mean for the percieved status of education  
+
+### NEW PERSPECTIVES ON IMMIGRANT CONTEXTS OF RECEPTION: The cultural armature of cities  
+ - The context that immigrants come into effects opportunities  
+ - Context is more than the labor sectors that immigrants occupy and demography  
+ - How do cities support immigrants policy wise, who do cities see themselves in relation to immigrants  
+ - How do we quantify sanctuary cities  
+
+### READ UP ON 
+
+ - How are immigrant decision making process for internal migration events different for immigrants  
+ - Is there local contextual factors effecting the relationship between immigrant non-immigrant internal migration  
+ - BEFORE NEXT MEETING THINK SPECIFICALLY ABOUT HOW PAST LITERATURE FITS INTO THIS NARRITIVE  
  

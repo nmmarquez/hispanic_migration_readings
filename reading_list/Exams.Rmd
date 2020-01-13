@@ -1,0 +1,114 @@
+---
+output: 
+  pdf_document:
+    keep_tex: true
+    fig_caption: yes
+    latex_engine: pdflatex
+    template: ./svm-latex-syllabus.tex
+geometry: margin=1in
+
+title: "SOC 800: Geographic Redistiribution of Latin Americans in the United States"
+author: Neal Marquez
+date: "Fall 2019"
+
+email: "nmarquez@u.washington.edu"
+fontfamily: mathpazo
+fontsize: 11pt
+header-includes:
+   - \linespread{1.05}
+---
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(cache=FALSE, dev='pdf')
+mon <- as.Date("2018-08-27")
+# fri <- as.Date("2016-01-08")
+advdate <- function(obj, adv) {
+ tmon <- obj + 7*(adv-1)
+ tfri <- obj + 4 + 7*(adv-1)
+ tmon <- format(tmon, format="%m/%d")
+ tfri <- format(tfri, format="%m/%d")
+ zadv <- sprintf("%02d", adv)
+ tmp <- paste("Week ",zadv,sep='',", ", tmon," - ",tfri)
+ return(tmp)
+}
+library(RefManageR)
+# library(knitcitations)
+# library(rcrossref)
+bibHisp <- ReadBib("~/Documents/bibtec/Hispanic Migration.bib",check=F)
+bibDem <- ReadBib("~/Documents/bibtec/Demography.bib",check=F)
+bibMig <- ReadBib("~/Documents/bibtec/Migration.bib",check=F)
+myopts <- BibOptions(bib.style = "authoryear", style="latex", first.inits=FALSE, max.names = 5, no.print.fields = c("doi", "url", "isbn", "issn"))
+```
+
+# Course Description
+
+Historically Latin America, and particularly Mexico, has been a large source of the overall immigration that has occurred in the United States. The relatively young population of Latin American countries and the demand for low wage labor in the United States have acted as push and pull factors for migration respectively. Geographic distribution, however, has widely varied for immigration events. In addition to traditional immigrant hubs Latin American immigrants into the United States have founded large populations On the Southern Border region and Chicago, in the first wave of immigration events, and at the turn of century more towards South and South Eastern States.  
+
+Most recently, migration from Mexico, which has the largest single foreign born population in the United States, has come to a tapering off, while migration from other Latin American countries, such as Central American countries, have begun to pick up. Despite this, populations of foreign born Mexicans continue to migrate within the United States shifting the locations where traditional migrant hubs were found. The continued migration of the Mexican foreig born population has not well been theorized upon and, as this population ages, we would expect the push and pull factors for migration events to evolve from predominantly labor concerns, to potentially housing, affordability, and health concerns.
+
+In addition, how changes in the foreign born Mexican population affect other racial and ethinic groups in recent years is less well studied. While traditionally, native Hispanic populations have grown alongside foreign born populations, more recent research shows these populations moving in different directions. In this Syllabus, we go over several of the historical factors that have led to large stocks of Latin Americans in the United States, how the historical pull factors may be shifting, and how this affects other racial/ethnic group dynamics such as segregation and migration.
+
+
+# Course Objectives
+
+1. Read Through Breif History of Latin American Migration in the United States
+
+2. Evaluate current litearture on studies involving new destinations and new realtionships between ethnic/racial groups.
+
+3. Begin to bring in data sources that fill the gap on the current discussion.
+
+# Demography
+
+## Overview and Evolution  
+
+```{r, echo = FALSE, results="asis"} 
+bibDem[c(
+  "Coale1975", "Caldwell1996", "Greenhalgh1996", "Preston1993", "Lee2003",
+  "Moffitt2005", "Xie2000", "Tienda2002", "GregJ.Duncan2008"
+)]
+```
+
+## Mortaility
+```{r, echo = FALSE, results="asis"} 
+bibDem[c(
+  "CALDWELL1990", "Preston1996", "McKeown1972", "Colgrove2002", "Szreter2002",
+  "Olshansky1986", "Caldwell1986", "Kuhn2010", "Link2002", "Omran2005",
+  "Clark2013", "Markides2005"
+)]
+``` 
+
+## Child Mortaility
+```{r, echo = FALSE, results="asis"} 
+bibDem[c(
+  "Finch2003", "Geronimus1992", "Gortmaker1997", "Hamilton2009", "Hummer2007",
+  "Landale2000", "Palloni1999"
+)]
+```
+
+
+## Fertility
+```{r, echo = FALSE, results="asis"} 
+bibDem[c(
+  "Bongaarts1978", "Hirschman1994", "Easterlin1975", "Bryant2007",
+  "Bongaarts2013", "Myrskyla2009"
+)]
+```
+
+## Social Determinants and Inequality
+```{r, echo = FALSE, results="asis"} 
+bibDem[c(
+  "Preston1975", "Preston1998", "Sampson2008", "Hayward2004", "Rogers2010", 
+  "Read2006", "Singh-Manoux2005", "SZRETER1988", "Link1995"
+)]
+```
+
+## Methods and Data
+```{r, echo = FALSE, results="asis"} 
+bibDem[c(
+  "Wachter", "Palmore1994", "Maine", "Preston2000", "Bhrolchain2007",
+  "JC1985", "Snipp2003", "Wang2012", "Wakefield2018", "Wheldon2016", 
+  "Hobcraft1982", "Raftery2014a"
+)]
+```
