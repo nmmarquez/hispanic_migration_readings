@@ -278,9 +278,8 @@ Hispanic men and women have lower mortality from both heart disease and cancer t
  - How do cities support immigrants policy wise, who do cities see themselves in relation to immigrants  
  - How do we quantify sanctuary cities  
 
-### READ UP ON 
-
+### READ UP ON  
  - How are immigrant decision making process for internal migration events different for immigrants  
  - Is there local contextual factors effecting the relationship between immigrant non-immigrant internal migration  
  - BEFORE NEXT MEETING THINK SPECIFICALLY ABOUT HOW PAST LITERATURE FITS INTO THIS NARRITIVE  
- 
+ - Read Mary Waters ethnic options  

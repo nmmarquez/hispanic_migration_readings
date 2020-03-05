@@ -7,7 +7,7 @@ output:
     template: ./svm-latex-syllabus.tex
 geometry: margin=1in
 
-title: "SOC 800: Comprehensive Exam Reading Prep"
+title: "Comprehensive Exam Reading List and Rationale"
 author: Neal Marquez
 date: "Winter 2020"
 
@@ -42,11 +42,19 @@ bibMig <- ReadBib("~/Documents/bibtec/Migration.bib",check=F)
 myopts <- BibOptions(bib.style = "authoryear", style="latex", first.inits=FALSE, max.names = 5, no.print.fields = c("doi", "url", "isbn", "issn"))
 ```
 
-## Reading List Description and Objectives
+# Description 
 
-# Demography
+Historically Latin America, and particularly Mexico, has been a large source of the overall immigration that has occurred in the United States. The relatively young population of Latin American countries and the demand for low wage labor in the United States have acted as push and pull factors for migration respectively. Geographic distribution, however, has widely varied for immigration events. In addition to traditional immigrant hubs Latin American immigrants into the United States have founded large populations On the Southern Border region and Chicago, in the first wave of immigration events, and at the turn of century more towards South and South Eastern States.  
 
-## Overview and Evolution  
+Most recently, migration from Mexico, which has the largest single foreign born population in the United States, has come to a tapering off, while migration from other Latin American countries, such as Central American countries, have begun to pick up. Despite this, populations of foreign born Mexicans continue to migrate within the United States shifting the locations where traditional migrant hubs were found. The continued migration of the Mexican foreig born population has not well been theorized upon and, as this population ages, we would expect the push and pull factors for migration events to evolve from predominantly labor concerns, to potentially housing, affordability, and health concerns.
+
+The following readings cover general demographic concepts, as well as migration and migration from Latin America to the United States. Taking those readings, I aim to build a theoretical framework for analyzing migration data of the Mexican born population living in the United States and why we see different patterns of internal migration relative to other populations. Strong understanding of  how core demographic patterns may alter the internal migration process is essential for understanding the specifics related to the Mexican migration process. This work expands upon the traditional economic factors that accompany studies of internal migration and focuses both on the receiving and sending context.  
+
+# Reading List
+
+## Demography
+
+### Overview and Evolution  
 
 ```{r, echo = FALSE, results="asis"} 
 bibList <- list()
@@ -84,7 +92,7 @@ bibList <- list()
 <!-- )] -->
 <!-- ``` -->
 
-## Social Determinants and Inequality
+### Social Determinants and Inequality
 ```{r, echo = FALSE, results="asis"} 
 (bibList[["social_determinants"]] <- bibDem[c(
   "Preston1975", "Preston1998", "Sampson2008", "Hayward2004", "Rogers2010", 
@@ -93,7 +101,7 @@ bibList <- list()
 )])
 ```
 
-## Methods and Data
+### Methods and Data
 ```{r, echo = FALSE, results="asis"} 
 (bibList[["methods"]] <- bibDem[c(
   "Wachter", "Palmore1994", "Maine", "Preston2000", "Bhrolchain2007",
@@ -102,9 +110,9 @@ bibList <- list()
 )])
 ```
 
-# General Migration  
+## General Migration  
 
-## Theories of Migration  
+### Theories of Migration  
 ```{r, echo = FALSE, results="asis"} 
 (bibList[["migtheory"]] <- c(bibMig[c(
   "Wimmer", "Hatton2002", "Brettell2007", "Massey1993", "King2012", "Cooke2018",
@@ -121,7 +129,7 @@ bibList <- list()
 <!-- )])) -->
 <!-- ``` -->
 
-## Assimilation and Incorporation  
+### Assimilation and Incorporation  
 ```{r, echo = FALSE, results="asis"} 
 (bibList[["assim"]] <- c(bibMig[c(
   "Jimenez2017", "Massey2010a", "Portes1993", "Rumbaut1997", "Gordon1964",
@@ -138,14 +146,14 @@ bibList <- list()
 <!-- ])) -->
 <!-- ``` -->
 
-## Internal Migration  
+### Internal Migration  
 ```{r, echo = FALSE, results="asis"} 
 (bibList[["internal"]] <- c(bibMig[c(
   "Ellis2012", "Skeldon2012", "King2010", "Molloy2011a", "Kritz2010",
   "Frey2011", "Cohen2016")], bibDem["Cooke2013"]))
 ```
 
-## Context  
+### Context  
 ```{r, echo = FALSE, results="asis"} 
 (bibList[["context"]] <- c(bibMig[c(
   "Clevenger2014", "Jaworsky2012", "Luthra2018", "Rumbaut2008", "Menjivar1997",
@@ -153,9 +161,9 @@ bibList <- list()
 ]))
 ```
 
-# Hispanic Migration in the United States
+## Hispanic Migration in the United States
 
-## Historical Demographic
+### Historical Demographic
 ```{r, echo = FALSE, results="asis"} 
 (bibList[["hispdemog"]] <- c(bibHisp[c(
   "Corwin", "Corwin1973", "Gonzalez-Barrera2013", "Lichter2012a", "Hall2016a",
@@ -164,7 +172,7 @@ bibList <- list()
 ]))
 ```
 
-## Policy Changes, Immigration, and Undocumented Status  
+### Policy Changes, Immigration, and Undocumented Status  
 ```{r, echo = FALSE, results="asis"} 
 (bibList[["policy"]] <- c(bibHisp[c(
   "Kerwin2010", "Durand2010", "Castles", "Golash-Boza2009", "Hainmueller2017",
@@ -174,7 +182,7 @@ bibList <- list()
 ]))
 ```
 
-## Accumuolation and Networks
+### Accumuolation and Networks
 ```{r, echo = FALSE, results="asis"} 
 (bibList[["accum"]] <- c(bibHisp[c(
   "Riosmena2013", "Garip2016", "Lee2017", "Durand1986", "Levitt2006",
@@ -183,7 +191,7 @@ bibList <- list()
 ]))
 ```
 
-## New Destinations  
+### New Destinations  
 ```{r, echo = FALSE, results="asis"} 
 (bibList[["newdest"]] <- c(
   bibHisp[c(
