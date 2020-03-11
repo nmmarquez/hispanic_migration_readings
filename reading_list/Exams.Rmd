@@ -36,9 +36,9 @@ advdate <- function(obj, adv) {
 library(RefManageR)
 # library(knitcitations)
 # library(rcrossref)
-bibHisp <- ReadBib("~/Documents/bibtec/Hispanic Migration.bib",check=F)
-bibDem <- ReadBib("~/Documents/bibtec/Demography.bib",check=F)
-bibMig <- ReadBib("~/Documents/bibtec/Migration.bib",check=F)
+bibHisp <- ReadBib("./Hispanic Migration.bib",check=F)
+bibDem <- ReadBib("./Demography.bib",check=F)
+bibMig <- ReadBib("./Migration.bib",check=F)
 myopts <- BibOptions(bib.style = "authoryear", style="latex", first.inits=FALSE, max.names = 5, no.print.fields = c("doi", "url", "isbn", "issn"))
 ```
 

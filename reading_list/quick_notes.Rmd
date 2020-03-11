@@ -1,0 +1,324 @@
+---
+title: "Reading List Quick Notes"
+author: "Neal Marquez"
+date: "3/5/2020"
+output: 
+    pdf_document:
+        pandoc_args: ["--extract-media", "."]
+---
+
+```{r setup, include=FALSE}
+library(RefManageR)
+bibHisp <- ReadBib("./Hispanic Migration.bib",check=F)
+bibDem <- ReadBib("./Demography.bib",check=F)
+bibMig <- ReadBib("./Migration.bib",check=F)
+myopts <- BibOptions(bib.style = "authoryear", style="latex", first.inits=FALSE, max.names = 5, no.print.fields = c("doi", "url", "isbn", "issn"))
+```
+
+# Reading List
+
+## Demography
+
+### Overview and Evolution  
+
+```{r, echo = FALSE, results="asis"} 
+bibDem["Coale1975"]
+```
+
+![tmp](https://i.imgur.com/VMfsB7x.png)
+
+The demographic transition is a decline in mortality, followed by decline fertility, that leads to population growth. The degree to which populations this is applicable to, what it's drivers are, and the existence of other transitions are debated in subsequent readings.
+
+```{r, echo = FALSE, results="asis"} 
+bibDem["Caldwell1996"]
+```
+
+Where does demography fall as a field and should it be considered a social science? While the topics covered in the field are undoubtly social in nature the approach, especially in what is now considered formal demography, is less about the why (drivers of change from a person level) and more about the how (demographic balancing/adjusting) and demographic accounting. Nevertheless, the two are inextricably linked. 
+
+```{r, echo = FALSE, results="asis"} 
+bibDem["Greenhalgh1996"]
+```
+
+At the same time the theories that are most strongly tied to traditional demography are embedded in assumptions of mid-century (1900s) modeernization theory with little to no critical perspectives. This is especially perplexing when we consider that many other social sciences have developed in tandem. Demography has, unfavorably set itself apart by, essentializing its theories, straying from motvation/the individual, and not acknowledging its history embedded in colonial rhetoric.
+
+```{r, echo = FALSE, results="asis"} 
+bibDem["Preston1993"]
+```
+
+The link between sociology and demography in the US may be traced to an empiricist privelged perspective of sociology in the United States. Demography shines in its priveleged postion in the eyes of policy makers and its ability to summarize data. Let us not forget duncans quote on what demography is  
+
+"Demography is the study of the size, territorial distribution, and composition of population, changes therein, and the components of such change."  
+
+Research directions in demography are more sensitive to the demand for demographic products and less dependent on internally generated pressures than those in other social sciences. This is not to say that the development of the discipline has no internal logic, but only that these forces operate in a more sporadic and disjointed fashion, and are more likely to be submerged in topical enthusiasms, than is the case in most other areas, hence the strong historical focus on controlling fertility. Some success in demography include  
+
+ - Demographic Transition (sometimes)  
+ - Bongaarts and Fertility  
+ - The role of demography and epi in public health  
+ - Caldwell and the devlopment of the journal Helath Transition Review  
+
+While demog has always been tied to stats they have usually been imported. At the time of writing some fruitful avenues of research included equity issues, relationships between population and the environment, voluntary internal migration, changes in the family structure and fertility, population aging, and models of illness, disability, and death. 
+
+```{r, echo = FALSE, results="asis"} 
+bibDem["Lee2003"]
+```
+
+Detailed explanation of the history of the demographic transition, early theorization, its potential drivers, and its consequences in a contemporary setting inlcuding population structures, demographic divdens, and projections.
+
+```{r, echo = FALSE, results="asis"} 
+bibDem["Moffitt2005"]
+```
+
+Causal analysis can get at drivers but damn its hard especially without a counter-factual. This is especially difficult for population research where the gold standard of randomized trails is never possible. While no one best method exists this paper reviews the potential of causal models in pop research and the importance of theory driving the analysis.
+
+```{r, echo = FALSE, results="asis"} 
+bibDem["Xie2000"]
+```
+
+Overview of recent developments in the field and future directions with a quantitative and hard science focus. 
+
+```{r, echo = FALSE, results="asis"} 
+bibDem["Tienda2002"]
+```
+
+How do we avoid ascriptive democracy, "civic hierarchies that are defined by race, birthplace, sex, and age, with their attendant social and economic consequences". Does the current social contract we abide by work for the diversifying US especialy for immigrant populations who are are the largest by number and second largest by percentage in recent history. A look at the laws regarding immigration and how it has altered the immigrant experience is evaluated with a demographic and policy lens.   
+
+```{r, echo = FALSE, results="asis"} 
+bibDem["GregJ.Duncan2008"]
+```
+
+By population perspective, I mean descriptions (means, distributions, rates) and relationships (e.g., correlations) found in the population at large. Population perspective is most easily attained using data from censuses of an entire population, but also, through modern sampling methods, by looking at well-chosen samples drawn from the general population. Tracking population level changes through surveys is often doable and representativeness should be strived for, however, in the case of causal analysis unbiased estimators should be preffered over a population framework. 
+
+```{r, echo = FALSE, results="asis"} 
+bibDem["CALDWELL1990"]
+```
+
+Whay are "developing" countries experiencing a shift in mortality with cultural, social, and behavioral explanations. Part of what makes this paper interestintg is that it bucks the nation of higher GDP equals higher life expectancy as previously thought, see the Preston curve. Some factors that are discussed are government health expenditure, maternal education, practice and use of birth control, and cultural practices such as favoring a gender for birth. The authors find that within country socioeconomic gradients occur however, their drivers are not quite clear as even in locations without access to health facilities differences exist. Another aspect of the paper ids the great variation that exists within countries in their health performance. 
+
+```{r, echo = FALSE, results="asis"} 
+bibDem["Preston1996"]
+```
+
+Demographies relationship with mortality estimates in large part to do with the Brass method and its future extensions. For more exploration see page 1077 [here](https://www.demographic-research.org/volumes/vol34/39/34-39.pdf). Follow ups include mortality estimates from non-vital registrations sources, older mortality estimates, and population variation in mortality rates. The paper finishes up with individual level factors, largely related to maternal health, behavior, and education that relate to child mortality rates.  
+
+```{r, echo = FALSE, results="asis"} 
+bibDem["Bongaarts1978"]
+```
+
+Classical Bongaarts, fertility rates can be determined by  
+
+- Proportion married  
+- Contraception  
+- Induced abortion  
+- Lactational infecundability  
+- Frequency of intercourse  
+- Sterility  
+- Spontaneous intrauterine mortality  
+- Duration of the fertile period  
+
+```{r, echo = FALSE, results="asis"} 
+bibDem["Hirschman1994"]
+```
+
+Overview of what fertility is (most often TFR for demographers) and what it isnt (population growth) and what the primary theories are for fertility change. Not that back in the day people loved talking about variation across couuntries and not within countries and certainly not overtime with ranking changes. This paper goes over the classic theory of change (Demographic transition theory), alongside a coupe economic theories of change (theory of intergenerational wealth flows, new home economics, and easterlin's demand, supply, and the costs of fertility regulation), as well as more cultural shift perspectives of change (ideational). Theory of Intergenerational Wealth Flows
+
+### Social Determinants and Inequality
+```{r, echo = FALSE, results="asis"}
+bibDem[c("Preston1975")]
+```
+
+The preston curve basically level of income influences level of mortality at a moment in time, level of income influences rate of change in mortality, and rate of change of income influences rate of change of mortality.
+
+```{r, echo = FALSE, results="asis"} 
+bibDem[c("Preston1998")]
+```
+
+Social and economic circumstances of childhood that predict the probability of survival to age 85 among African±Americans. It uses a unique study design in which sur- vivors are linked to their records in U.S. Censuses of 1900 and 1910. A control group of age and race- matched children is drawn from Public Use Samples for these censuses. It concludes that the factors most predictive of survival are farm background, having literate parents, and living in a two-parent household. Results find thar risks associated with childhood mortality are positively correlated with high adult mortality risk and more in line with direct psychological risks. Improtant to think about how this may have changed over time and how this might not hold with very elderly groups.  
+
+```{r, echo = FALSE, results="asis"} 
+bibDem[c("Sampson2008")]
+```
+
+
+
+```{r, echo = FALSE, results="asis"} 
+bibDem[c("Hayward2004")]
+```
+
+Early childhood factors and risk matter for adult mortality as well. Potential changes in childhood education policy could have long lasting effects on populations health.  
+
+```{r, echo = FALSE, results="asis"} 
+bibDem[c("Rogers2010")]
+```
+
+Even if we control for everything there is a sex gap, and as a matter of fact it widens when controlling for certain factor. Should we be thinking about how these factors potentially differentially effect men and women?  
+
+```{r, echo = FALSE, results="asis"} 
+bibDem[c("Read2006")]
+```
+
+For self reported health measures there is a variable gap between men and women depending on the factors controlled for and the racial/ethnic group examined. Results underscore the need for more research on the role of race and ethnicity in shaping gendered health inequalities and the mechanisms that lead to such variable patterns of difference across and within US racial and ethnic populations.  
+
+```{r, echo = FALSE, results="asis"} 
+bibDem[c("Singh-Manoux2005")]
+```
+
+Socialization is how we learn the norms and beliefs of our society. From our earliest family and play experiences, we are made aware of societal values and expectations. The authors argue that socialization reinforce social inequalities and have an effect on health inequalities.  
+
+```{r, echo = FALSE, results="asis"} 
+bibDem[c("SZRETER1988")]
+```
+
+Public Health is important no matter what McKeown's thesis says. In response to McKeown "An alternative interpretation of the same epidemiological evidence then forms the basis for a revisionist account which directs attention to the leading role played by the public health movement and its locally administered preventive health measures in combating the urban congestion created by industrialization."
+
+```{r, echo = FALSE, results="asis"} 
+bibDem[c("Link1995")]
+```
+
+BU still social determinants of health are probably a thing. This paper reconceptualizes the McKeown thesis and situates it in the context that social structures matter even when public health is important. 
+
+```{r, echo = FALSE, results="asis"} 
+bibDem[c("Chetty2018")]
+```
+
+```{r, echo = FALSE, results="asis"} 
+bibDem[c("Chetty2016")]
+```
+
+### Methods and Data
+```{r, echo = FALSE, results="asis"}
+bibDem[c("Wachter")]
+```
+
+```{r, echo = FALSE, results="asis"}
+bibDem[c("Palmore1994")]
+```
+
+```{r, echo = FALSE, results="asis"}
+bibDem[c("Maine")]
+```
+
+Because demography is often intertwined to the needs of policy and decision making the field often sees itself as objective and data driven. Maine makes the argumnet that framing of demographic topics how "policies, programmes and individual treatment inevitably require value-laden choices to be made ... and that reproductive rights principles should play a critical role in guiding such decision-making..."
+
+```{r, echo = FALSE, results="asis"}
+bibDem[c("Preston2000")]
+```
+
+```{r, echo = FALSE, results="asis"}
+bibDem[c("Bhrolchain2007")]
+```
+
+Demography need not focus on the individual to stay relevant. In fact, its stregnths lie in population shifts and that need no change when causal factors come to play. A number of causal thought experiments and exampls are presented that display the strength of a population perspective in causal studies. 
+
+```{r, echo = FALSE, results="asis"}
+bibDem[c("JC1985")]
+```
+
+```{r, echo = FALSE, results="asis"}
+bibDem[c("Snipp2003")]
+```
+
+The history of policy, political, and public discourse in relation to the racialization process of the census and its influence on subsequent social science research.
+
+```{r, echo = FALSE, results="asis"}
+bibDem[c("Wang2012")]
+```
+
+```{r, echo = FALSE, results="asis"}
+bibDem[c("Wakefield2018")]
+```
+
+```{r, echo = FALSE, results="asis"}
+bibDem[c("Wheldon2016")]
+```
+
+```{r, echo = FALSE, results="asis"}
+bibDem[c("Hobcraft1982")]
+```
+
+```{r, echo = FALSE, results="asis"}
+bibDem[c("Raftery2014a")]
+```
+
+## General Migration  
+
+### Theories of Migration  
+```{r, echo = FALSE, results="asis"} 
+c(bibMig[c(
+  "Wimmer", "Hatton2002", "Brettell2007", "Massey1993", "King2012", "Cooke2018",
+  "Calnan2017", "Cadena2013", "Ellis2014", "Wang2016a"
+)], bibDem[c("Morris2017", "Abel2019")])
+```
+
+```{r, echo = FALSE, results="asis"}
+bibDem[c("Morris2017")]
+```
+
+```{r, echo = FALSE, results="asis"}
+bibDem[c("Abel2019")]
+```
+
+### Assimilation and Incorporation  
+```{r, echo = FALSE, results="asis"} 
+c(bibMig[c(
+  "Jimenez2017", "Massey2010a", "Portes1993", "Rumbaut1997", "Gordon1964",
+  "Gans1997", "Brubaker2001", "Alba1997", "Waters2016", "Waldinger2016",
+  "Waldinger2004"
+)])
+```
+
+
+### Internal Migration  
+```{r, echo = FALSE, results="asis"} 
+c(bibMig[c(
+  "Ellis2012", "Skeldon2012", "King2010", "Molloy2011a", "Kritz2010",
+  "Frey2011", "Cohen2016")], bibDem["Cooke2013"])
+```
+
+### Context  
+```{r, echo = FALSE, results="asis"} 
+c(bibMig[c(
+  "Clevenger2014", "Jaworsky2012", "Luthra2018", "Rumbaut2008", "Menjivar1997",
+  "Flores2009", "Ellis2009a")
+])
+```
+
+## Hispanic Migration in the United States
+
+### Historical Demographic
+```{r, echo = FALSE, results="asis"} 
+bibHisp[c(
+  "Corwin", "Corwin1973", "Gonzalez-Barrera2013", "Lichter2012a", "Hall2016a",
+  "Kandel2004", "Flores2017a", "Caban2003"
+  )]
+```
+
+### Policy Changes, Immigration, and Undocumented Status  
+```{r, echo = FALSE, results="asis"} 
+c(bibHisp[c(
+  "Kerwin2010", "Durand2010", "Castles", "Golash-Boza2009", "Hainmueller2017",
+  "VanHook2015", "Gonzales2011", "Menjivar2006", "Hall2010", "Massey2002", 
+  "Hall2019b"
+  ), bibMig[c("Ellis2016")]
+])
+```
+
+### Accumuolation and Networks
+```{r, echo = FALSE, results="asis"} 
+c(bibHisp[c(
+  "Riosmena2013", "Garip2016", "Lee2017", "Durand1986", "Levitt2006",
+  "Anguiano-Tellez2007", "Alarcon2016", "Crowley2010", "Massey1986"
+  )
+])
+```
+
+### New Destinations  
+```{r, echo = FALSE, results="asis"} 
+c(
+  bibHisp[c(
+    "Foster2018", "Durand2000", "Singer2004", "Massey2010", "Barcus2007",
+    "Hall2017", "Light2009", "Singer2015", "Durand1999", "Crowley2006")],
+  bibMig[c(
+    "Massey2008", "Kandel2005", "Lichter2009", "Hernandez-Leon2000", "Parrado2016"
+  )]
+)
+```
